@@ -1019,3 +1019,29 @@ img {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* كارت واحد في الصف */
+    gap: 15px;
+  }
+
+  .project-card {
+    transform: scale(0.95);
+    padding: 12px;
+  }
+
+  .project-card img {
+    height: 180px; /* تصغير صورة المشروع */
+    object-fit: cover;
+  }
+
+  .project-card h3 {
+    font-size: 16px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
