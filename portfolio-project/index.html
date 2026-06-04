@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Fouad - Portfolio</title>
+    <!-- Google Fonts: Cairo for Arabic, Orbitron for futuristic English/Numbers -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Canvas for Starfield Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ahmed<span>Fouad</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h3 class="subtitle">Ahmed Fouad</h3>
+            <h1 class="glitch" data-text="I am a Frontend Developer">I am a Frontend Developer</h1>
+            <h2 class="neon-text">Crafting modern and user-focused digital experiences.</h2>
+            <p>Building modern, fast, and responsive web applications with clean and user-friendly designs.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Collaborate</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3>About Me</h3>
+                    <p>Hello, my name is Ahmed Fouad Hussein. I am a second-year Computer and Information Science
+                        student with a strong passion for
+                        both Web Development and Penetration Testing.
+                        I am highly motivated to build modern, responsive web interfaces while also developing a deep
+                        understanding of cybersecurity and how systems
+                        can be secured and tested against vulnerabilities. I continuously improve my skills through
+                        hands-on projects and self-learning, aiming to
+                        combine development and security in a practical way.
+                        I am currently seeking an internship or job opportunity in a professional environment where I
+                        can apply my skills, grow my experience, and
+                        contribute to building secure and impactful digital solutions.</p>
+                    <ul class="about-info">
+                        <li><i class="fas fa-briefcase"></i> <strong>Experience:</strong> 1+ Years</li>
+                        <li><i class="fas fa-graduation-cap"></i> <strong>Education:</strong> Faculty of Computers and
+                            Information</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="hologram-container">
+                        <!-- Holographic placeholder or image -->
+                        <div class="hologram-effect"></div>
+                        <img src="assaste/images/WhatsApp Image 2026-05-06 at 15.47.16.jpeg" alt="My Profile"
+                            class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">MY <span>Education</span></h2>
+            <div class="education-grid">
+                <div class="education-item glass-card">
+                    <h3>My Faculty 🎓</h3>
+                    <p>Faculty of Computers and Information</p>
+                    <h3>Web Development</h3>
+                    <p> Front-End Development at NTI (National Telecommunication Institute).</p>
+                    <p>Frontend Web Development Bootcamp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skill <span>Arsenal</span></h2>
+            <div class="skills-grid">
+                <!-- Skill Item -->
+                <div class="skill-card glass-card">
+                    <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%; box-shadow: 0 0 10px #e34f26;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%; box-shadow: 0 0 10px #1572b6;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%; box-shadow: 0 0 10px #f7df1e;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-react skill-icon" style="color: #61dafb;"></i>
+                    <h3>React.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%; box-shadow: 0 0 10px #61dafb;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="devicon-cplusplus-plain colored skill-icon" style="color: #1572b6;"></i>
+                    <h3>C++</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%; box-shadow: 0 0 10px #339933;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-brain skill-icon" style="color: #339933;"></i>
+                    <h3>Problem Solving</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; box-shadow: 0 0 10px #f24e1e;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-bootstrap skill-icon" style="color: #5bc0de;"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; box-shadow: 0 0 10px #f24e1e;"></div>
+                    </div>
+                </div>
+                <!-- <div class="skill-card glass-card">
+                    <i class="bi bi-code-slash" style="color:#5bc0de; font-size:40px;"></i>
+                    <h3>OOP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; box-shadow: 0 0 10px #f24e1e;"></div>
+                    </div>
+                </div> -->
+                <!-- <div class="skill-card glass-card">
+                    <i class="bi bi-shield-lock skill-icon" style="color:#5bc0de; font-size:40px;"></i>
+                    <h3>Penetration Testing</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; box-shadow: 0 0 10px #f24e1e;"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Best <span>Work</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <img src="assaste/images/ChatGPT Image May 2, 2026, 04_10_54 AM.png" alt="Project Image">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Explore</a>
+                            <a href="#" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SkillBridge</h3>
+                        <p>Skill Bridge connects freelancers with clients to showcase skills and find opportunities.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-meteor"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://ii3boody.github.io/QuickGen/" class="btn btn-primary"><i class="fas fa-eye"></i> Explore</a>
+                            <a href="https://github.com/ii3boody/QuickGen" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quick Gen</h3>
+                        <p>Advanced e-commerce platform with cyberpunk style, featuring ultra-fast performance.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Bootstrap </span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Explore</a>
+                            <a href="#" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cosmic Trips App</h3>
+                        <p>Web app for booking virtual tours to planets, with smooth and attractive animations.</p>
+                        <div class="tech-tags">
+                            <span>Vue.js</span>
+                            <span>GSAP</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="education section">
+        <div class="container">
+            <h2 class="section-title">MY <span>Feedback</span></h2>
+            <div class="education-grid">
+                <div class="education-item glass-card">
+                    <div class="feedback-grid">
+                        <div class="image-box">
+                            <img src="assaste/images/لقطة شاشة 2026-05-05 180445.png">
+                        </div>
+                        <div class="text-box">
+                            <p>
+                                This is feedback from a client who contacted me to build a front-end website for his
+                                brand.
+                                We agreed on a specific deadline, and I was able, thanks to God, to deliver the project
+                                exactly as required before the deadline. This is the client’s feedback on the work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title"> <span>Contact me</span></h2>
+            <div class="contact-wrapper glass-card">
+                <div class="contact-info">
+                    <h3>Open for opportunities — feel free to reach out</h3>
+                    <p>I'm always open to collaborating on innovative and impactful projects.</p>
+                    <div class="contact-methods">
+                        <div class="method">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ahmedsoinc1@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>01099821783</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ahmedfouad-web" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmed-fouad-9162b2408?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/201099821783" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/s_o_i_n_c_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/mpqbjroz" method="POST">
+
+                    <div class="input-group">
+                        <input type="text" name="user_name" id="name" required placeholder=" ">
+                        <label for="name">Your Identity (Name)</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="user_email" id="email" required placeholder=" ">
+                        <label for="email">Your Coordinates (Email)</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message">Signal Content (Message)</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Signal</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Transmitted from <span class="neon-text">Ahmed Fouad </span> galaxy. All rights
+                    reserved.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
